@@ -23,8 +23,6 @@ body{
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
-
-    background-color: bisque;
 }
 
 .container{
@@ -35,8 +33,6 @@ body{
     width: 370px;
     padding: 15px;
     margin: 50px 0px;
-
-    background-color: yellowgreen;
 }
 
 .page-info{                  /*section*/
@@ -44,9 +40,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 355px;
     margin: 10px 0px;
-
-    background-color: yellow;
 }
 
 .page-tittle{
@@ -70,9 +65,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 355px;
     margin: 10px 0px;
-
-    background-color: lightgreen;
 }
 
 .rating{
@@ -83,13 +77,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 355px;
     padding: 10px;
 }
 
 .rating .stars{
     background-image: url(images/icon-star.svg);
     background-repeat: repeat-x;
-    width: calc((100% /19) * 4.8);
+    width: calc((100% /19) * 4.7);
     margin: 10px;
 }
 
@@ -103,8 +98,7 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 10px 0px;
-
-    background-color: lightskyblue;
+    width: 355px;
 }
 
 .card{
@@ -113,6 +107,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    width: 355px;
+    height: 215px;
     margin: 10px 0px;
     padding: 30px 30px;
 
@@ -152,16 +148,119 @@ body{
     justify-self: end;
     align-self: flex-start;
     background-color: var(--color-Very-Dark-Magenta);
+    color: var(--color-Soft-Pink);
     border-radius: 0.5em;
     padding: 3px;
     margin: 3px;
 }
 
-.attribution{
-    color: var(--color-Soft-Pink);
-}
-
 .attribution a{
     text-decoration: none;
     color: var(--color-Light-Grayish-Magenta);
+}
+
+@media(min-width:375px){                                        /* media queries */
+    body{
+        padding: 30px 50px 0px 50px;
+
+    }
+
+    .container{
+        width: 90%;
+        padding: 15px;
+        margin: 0px 0px;
+    }
+
+    .info-and-ratings-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .page-info{                  /*section*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 10px 0px;
+        width: 470px;
+    }
+
+    .page-tittle{
+        color: var(--color-Very-Dark-Magenta);
+        font-size: 3em;
+        text-align: left;
+        line-height: 1em;
+        margin: 10px 0px;
+    }
+    
+    .page-text{
+        color: var(--color-Dark-Grayish-Magenta);
+        text-align: left;
+        line-height: 1.5em;
+        font-weight: 500;
+        margin: 10px 0px;
+    }
+
+    .ratings{                       /* section */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 355px;
+        margin: 10px 0px;
+        width: 470px;
+        position: relative;
+    }
+    
+    .rating{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 365px;
+        padding: 10px;
+    }
+
+    #rating-reviews{
+        align-self: flex-start;
+    }
+    #rating-guru{
+        align-self: center;
+    }
+    #rating-besttech{
+        align-self: flex-end;
+    }
+
+    .cards{                     /* section */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0px;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .card{
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 355px;
+        margin: 10px 0px;
+        padding: 30px 30px;    
+        background-color: var(--color-Very-Dark-Magenta);
+    }
+
+    #card-colton{
+        align-self: flex-start;
+    }
+    #card-irene{
+        align-self: center;
+    }
+    #card-anne{
+        align-self: flex-end;
+    }
 }
